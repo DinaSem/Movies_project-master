@@ -1,25 +1,27 @@
 {
   "files": {
-    "main.css": "/Movies_project-master/static/css/main.0bdd5366.chunk.css",
-    "main.js": "/Movies_project-master/static/js/main.917be813.chunk.js",
-    "main.js.map": "/Movies_project-master/static/js/main.917be813.chunk.js.map",
+    "main.css": "/Movies_project-master/static/css/main.c01a8cd7.chunk.css",
+    "main.js": "/Movies_project-master/static/js/main.a4976a0f.chunk.js",
+    "main.js.map": "/Movies_project-master/static/js/main.a4976a0f.chunk.js.map",
     "runtime-main.js": "/Movies_project-master/static/js/runtime-main.41b3202b.js",
     "runtime-main.js.map": "/Movies_project-master/static/js/runtime-main.41b3202b.js.map",
-    "static/js/2.b0e20c82.chunk.js": "/Movies_project-master/static/js/2.b0e20c82.chunk.js",
-    "static/js/2.b0e20c82.chunk.js.map": "/Movies_project-master/static/js/2.b0e20c82.chunk.js.map",
+    "static/js/2.58185227.chunk.js": "/Movies_project-master/static/js/2.58185227.chunk.js",
+    "static/js/2.58185227.chunk.js.map": "/Movies_project-master/static/js/2.58185227.chunk.js.map",
     "static/js/3.770c7ded.chunk.js": "/Movies_project-master/static/js/3.770c7ded.chunk.js",
     "static/js/3.770c7ded.chunk.js.map": "/Movies_project-master/static/js/3.770c7ded.chunk.js.map",
     "index.html": "/Movies_project-master/index.html",
-    "static/css/main.0bdd5366.chunk.css.map": "/Movies_project-master/static/css/main.0bdd5366.chunk.css.map",
-    "static/js/2.b0e20c82.chunk.js.LICENSE.txt": "/Movies_project-master/static/js/2.b0e20c82.chunk.js.LICENSE.txt",
+    "static/css/main.c01a8cd7.chunk.css.map": "/Movies_project-master/static/css/main.c01a8cd7.chunk.css.map",
+    "static/js/2.58185227.chunk.js.LICENSE.txt": "/Movies_project-master/static/js/2.58185227.chunk.js.LICENSE.txt",
+    "static/media/angle-circle-up.0bda9497.svg": "/Movies_project-master/static/media/angle-circle-up.0bda9497.svg",
     "static/media/github_logo.4b39480e.png": "/Movies_project-master/static/media/github_logo.4b39480e.png",
+    "static/media/house-chimney.dfaf9c72.svg": "/Movies_project-master/static/media/house-chimney.dfaf9c72.svg",
     "static/media/logo_telegram.02c66337.png": "/Movies_project-master/static/media/logo_telegram.02c66337.png",
     "static/media/underConst.d30ffd7e.png": "/Movies_project-master/static/media/underConst.d30ffd7e.png"
   },
   "entrypoints": [
     "static/js/runtime-main.41b3202b.js",
-    "static/js/2.b0e20c82.chunk.js",
-    "static/css/main.0bdd5366.chunk.css",
-    "static/js/main.917be813.chunk.js"
+    "static/js/2.58185227.chunk.js",
+    "static/css/main.c01a8cd7.chunk.css",
+    "static/js/main.a4976a0f.chunk.js"
   ]
 }
