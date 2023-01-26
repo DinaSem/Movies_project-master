@@ -14,8 +14,8 @@ body,
 #root,
 .container {
    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+    /*display: flex;*/
+    /*justify-content: center;*/
 }
 /*.loader{*/
 /*    width: 100%;*/

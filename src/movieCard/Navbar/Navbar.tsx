@@ -22,8 +22,7 @@ export const Navbar = () => {
             </div>
             <div className={s.navLinks}>
                 <Link to={{pathname: '/'}}>Home</Link>
-                <Link to={{pathname: 'about/'}}>About project</Link>
-
+                {/*<Link to={{pathname: 'about/'}}>About project</Link>*/}
             </div>
         </div>
     );
