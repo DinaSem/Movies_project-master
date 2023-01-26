@@ -39,7 +39,6 @@ export const Header = () => {
     return (
         <div className={s.headerContainer}>
             <div>
-
                     <p style={{textAlign:'left'}}>Search term</p>
                     <input type="text"
                            className={s.inputsearch}
@@ -48,17 +47,14 @@ export const Header = () => {
                            onKeyPress={onKeyPressHandler}
                            value={value}
                            autoFocus
+
                            // placeholder={'Search Movies'}
 
                     />
-
                 <button className={s.button} onClick={onClickHandler}>Search</button>
                 {/*<p>Movies with {value} </p>*/}
                 <label className={s.search} htmlFor="input-search"></label>
             </div>
-
-
-
             <div style={{marginLeft:'15px'}}>
                 <p style={{textAlign: 'left',marginLeft:'15px'}}>Genres</p>
                 <SuperSelect options={genres}

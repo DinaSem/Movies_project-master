@@ -2,7 +2,7 @@ import React from 'react';
 import s from './Navbar.module.css'
 import logo from '../images/dina.png'
 import {Link} from "react-router-dom";
-
+import home from '../images/house-chimney.svg'
 export const Navbar = () => {
     return (
         <div className={s.nav}>
@@ -21,7 +21,7 @@ export const Navbar = () => {
                 </label>
             </div>
             <div className={s.navLinks}>
-                <Link to={{pathname: '/'}}>Home</Link>
+                <Link to={{pathname: '/'}}><img className={s.home} src={home} alt="Home" /></Link>
                 {/*<Link to={{pathname: 'about/'}}>About project</Link>*/}
             </div>
         </div>

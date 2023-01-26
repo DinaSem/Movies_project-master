@@ -8,9 +8,7 @@ import {fetchMoviesTC, GenresType, RatingType, setGenreMovieAC} from "./bll/movi
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType, useAppSelector} from "./state/store";
 import {Pagination} from "../components/Pagination/Pagination";
-
-
-
+import up from './images/angle-circle-up.svg'
 
 export const Home = React.memo(() => {
 
@@ -19,31 +17,43 @@ export const Home = React.memo(() => {
     const pageNum = useSelector<AppRootStateType, number>(state => state.movies.page)
 
     const status = useAppSelector((state) => state.app.status)
-
-    // const [rating, setRating] = useState(ratingVariants[0])
-    // const [filters, setFilters] = useState({
-    //     variantOfGenres,
-    //     rating,
-    //
-    // })
-    // const [sortVariant, setSortVariants] = useState(sortVariants[0])
-    // let [movie, setMovie] = useState<MovieType[] | null>(null)
+    const [showButton, setShowButton] = useState(false);
     const dispatch = useDispatch()
 
     useEffect(() => {
         dispatch(fetchMoviesTC())
-    }, [dispatch,currentGenreFromState,pageNum])
+    }, [dispatch, currentGenreFromState, pageNum])
+    // <ScrollToTopButton height={200} />
+    // @ts-ignore
 
-
-
+        const scrollToTop = () => {
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: "smooth"
+            });
+    }
+        // @ts-ignore
+        const handleScroll = (event) => {
+            if (document.documentElement.scrollTop > 200) {
+                setShowButton(true);
+            } else if (!showButton) {
+                setShowButton(false);
+            }
+        };
+     useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+                window.removeEventListener("scroll", handleScroll);
+            };
+        }, []);
     return (
         <div className={s.wrapper}>
 
             <Header/>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-
-                <div >
-                        <Pagination/>
+                <div>
+                    <Pagination/>
                 </div>
             </div>
             {status === "loading"
@@ -55,43 +65,15 @@ export const Home = React.memo(() => {
                     })}
                 </section>
             }
-            <div >
+            <button
+                className={showButton ? s.scrollToTopBtn : s.hidden}
+                onClick={scrollToTop}>
+                <img src={up} alt="" className={s.scroll} />
+            </button>
+
+            <div>
                 <Pagination/>
             </div>
-
-
-            {/*<Paginator cardPacksTotalCount={mov.cardPacksTotalCount}*/}
-            {/*           pageCount={mov.pageCount}*/}
-            {/*           pageSize={10}*/}
-            {/*           currentPage={mov.currentPage}*/}
-            {/*           onPageChanged={onPageChanged}*/}
-            {/*           portionSize={undefined}/>*/}
-            {/*    <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>*/}
-            {/*        /!*<div>*!/*/}
-            {/*        /!*    <div style={{marginRight: '5px'}}><p>Sort by</p></div>*!/*/}
-
-            {/*        /!*    <div>*!/*/}
-            {/*        /!*        <SuperSelect options={sortVariants}*!/*/}
-            {/*        /!*                     value={sortVariant}*!/*/}
-            {/*        /!*                     onChange={handleForSorting}*!/*/}
-            {/*        /!*                     onChangeOption={setSortVariants}/>*!/*/}
-            {/*        /!*    </div>*!/*/}
-            {/*        /!*</div>*!/*/}
-
-            {/*    </div>*/}
-
-            {/*    <div >*/}
-            {/*        <div style={{marginRight: '5px'}}><p>Rating</p></div>*/}
-
-            {/*        <div>*/}
-            {/*            <SuperSelect options={ratingVariants}*/}
-            {/*                         value={rating}*/}
-            {/*                         onChange={handleForRating}*/}
-            {/*                         onChangeOption={setRating}/>*/}
-            {/*        </div>*/}
-            {/*    </div>*/}
-            {/*    <p>Found {movie?.length} results</p>*/}
-
 
         </div>
 

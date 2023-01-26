@@ -48,6 +48,39 @@ body,
     padding-top: 70px;
     width: 80%;
 }
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+main {
+    width: 500px;
+    margin: auto;
+}
+
+.scrollToTopBtn {
+    bottom: 10%;
+    border: 3px;
+    cursor: pointer;
+    display: block;
+    padding: 0px;
+    position: fixed;
+    right: 3%;
+    border-radius: 20px;
+    background-color: #202122;
+}
+.scrollToTopBtn:hover {
+     transform: scale(1.1);
+}
+.hidden {
+    display: none;
+}
+.scroll{
+    width: 40px;
+    height: 40px;
+}
+
 
 
 

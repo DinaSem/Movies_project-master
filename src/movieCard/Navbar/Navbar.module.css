@@ -38,6 +38,7 @@
     display: inline;
     float: right;
     font-size: 18px;
+    margin: 2px;
 }
 
 .nav > .navLinks > a {
@@ -48,67 +49,54 @@
 }
 
 .nav > .navLinks > a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
+ border-bottom: #dd4124 3px solid;
 }
 
 .nav > #navCheck {
     display: none;
 }
-.logo{
+
+.logo {
     width: 40px;
     height: 40px;
+}
+.home {
+    height: 28px;
+    width: 28px;
+    fill: none;
+    pointer-events: all;
+}
+
+.home:hover {
+fill: #dd4124;
 }
 
 
 @media (max-width: 650px) {
-    /*.nav > .navBtn {*/
-    /*    display: inline-block;*/
+
+    /*.nav > .navLinks {*/
     /*    position: absolute;*/
-    /*    right: 0px;*/
-    /*    top: 0px;*/
-    /*}*/
-
-    /*.nav > .navBtn > label {*/
-    /*    display: inline-block;*/
-    /*    width: 50px;*/
-    /*    height: 50px;*/
-    /*    padding: 13px;*/
-    /*}*/
-
-    /*.nav > .navBtn > label:hover, .nav #navCheck:checked ~ .navBtn > label {*/
-    /*    background-color: rgb(145, 145, 145);*/
-    /*}*/
-
-    /*.nav > .navBtn > label > span {*/
     /*    display: block;*/
-    /*    width: 25px;*/
-    /*    height: 10px;*/
-    /*    border-top: 2px solid #eee;*/
+    /*    width: 100%;*/
+    /*    background-color: #333;*/
+    /*    height: 0px;*/
+    /*    transition: all 0.3s ease-in;*/
+    /*    overflow-y: hidden;*/
+    /*    top: 50px;*/
+    /*    left: 0px;*/
     /*}*/
 
-    .nav > .navLinks {
-        position: absolute;
-        display: block;
-        width: 100%;
-        background-color: #333;
-        height: 0px;
-        transition: all 0.3s ease-in;
-        overflow-y: hidden;
-        top: 50px;
-        left: 0px;
-    }
+    /*.nav > .navLinks > a {*/
+    /*    display: block;*/
+    /*    width: 100%;*/
+    /*}*/
 
-    .nav > .navLinks > a {
-        display: block;
-        width: 100%;
-    }
+    /*.nav > #navCheck:not(:checked) ~ .navLinks {*/
+    /*    height: 0px;*/
+    /*}*/
 
-    .nav > #navCheck:not(:checked) ~ .navLinks {
-        height: 0px;
-    }
-
-    .nav > #navCheck:checked ~ .navLinks {
-        height: calc(100vh - 50px);
-        overflow-y: auto;
-    }
+    /*.nav > #navCheck:checked ~ .navLinks {*/
+    /*    height: calc(100vh - 50px);*/
+    /*    overflow-y: auto;*/
+    /*}*/
 }
