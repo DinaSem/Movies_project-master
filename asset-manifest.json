@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Movies_project/static/css/main.0bdd5366.chunk.css",
+    "main.js": "/Movies_project/static/js/main.917be813.chunk.js",
+    "main.js.map": "/Movies_project/static/js/main.917be813.chunk.js.map",
+    "runtime-main.js": "/Movies_project/static/js/runtime-main.90dc6a88.js",
+    "runtime-main.js.map": "/Movies_project/static/js/runtime-main.90dc6a88.js.map",
+    "static/js/2.b0e20c82.chunk.js": "/Movies_project/static/js/2.b0e20c82.chunk.js",
+    "static/js/2.b0e20c82.chunk.js.map": "/Movies_project/static/js/2.b0e20c82.chunk.js.map",
+    "static/js/3.770c7ded.chunk.js": "/Movies_project/static/js/3.770c7ded.chunk.js",
+    "static/js/3.770c7ded.chunk.js.map": "/Movies_project/static/js/3.770c7ded.chunk.js.map",
+    "index.html": "/Movies_project/index.html",
+    "static/css/main.0bdd5366.chunk.css.map": "/Movies_project/static/css/main.0bdd5366.chunk.css.map",
+    "static/js/2.b0e20c82.chunk.js.LICENSE.txt": "/Movies_project/static/js/2.b0e20c82.chunk.js.LICENSE.txt",
+    "static/media/github_logo.4b39480e.png": "/Movies_project/static/media/github_logo.4b39480e.png",
+    "static/media/logo_telegram.02c66337.png": "/Movies_project/static/media/logo_telegram.02c66337.png",
+    "static/media/underConst.d30ffd7e.png": "/Movies_project/static/media/underConst.d30ffd7e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90dc6a88.js",
+    "static/js/2.b0e20c82.chunk.js",
+    "static/css/main.0bdd5366.chunk.css",
+    "static/js/main.917be813.chunk.js"
+  ]
+}
