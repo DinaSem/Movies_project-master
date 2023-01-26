@@ -1,0 +1,100 @@
+
+.movie {
+    display: flex;
+    width: 29%;
+    background-color: white;
+    align-items: flex-start;
+    /*margin-bottom: 70px;*/
+    justify-content: space-between;
+    font-weight: 500;
+    padding: 15px;
+    border-radius: 5px;
+    color: #5a5a60;
+    margin: 40px 27px;
+    text-decoration: none;
+    box-shadow: 1px 2px 4px #e76148, 1px 2px 4px #e76148;
+    text-align: justify;
+}
+
+
+.cardsPicture {
+    /*position: relative;*/
+    top: -30px;
+    max-width: 150px;
+    width: 100%;
+    margin-right: 20px;
+
+}
+
+.movieTitle, .movieYear {
+    margin: 0;
+}
+
+h3 {
+    line-height: 25px;
+    font-size: 1.25em;
+    font-weight: 800;
+    text-shadow: 0 2px 2px rgb(0 0 40%);
+    margin: 0;
+    text-align: start;
+}
+
+p {
+    font-weight: 500;
+}
+
+@media (max-width: 1222px) {
+    .movie {
+        width: 35%;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1000px) {
+    .movie {
+        width: 40%;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 900px) {
+    .movie {
+        width: 45%;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 700px) {
+    .movie {
+        width: 55%;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 600px) {
+    .movie {
+        width:78%;
+        font-weight: 500;
+        padding: 7px;
+    }
+    .movieTitle{
+        font-weight: 500;
+        font-size: 15px;
+    }
+    .genre, .movieYear{
+        font-size: 13px;
+    }
+    .minitext{
+        font-size: 10px;
+    }
+    h3 {
+
+    }
+    .cardsPicture {
+        /*position: relative;*/
+        top: -30px;
+        max-width: 100px;
+        width: 100%;
+        margin-right: 5px;
+    }
+}
